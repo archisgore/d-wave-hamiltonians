@@ -1,0 +1,17 @@
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.mypy]
+strict = true
+files = ["hello-world", "prime-factorization"]
+
+# The D-Wave Ocean libraries ship no type information (no py.typed), so mypy
+# cannot verify calls into them. Skip following their sources instead of
+# scattering per-line ignores through our own code.
+[[tool.mypy.overrides]]
+module = ["dwave.*", "dimod", "dimod.*", "dwave_networkx.*", "neal.*"]
+follow_imports = "skip"
+ignore_missing_imports = true
