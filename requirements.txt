@@ -1,0 +1,10 @@
+# D-Wave Ocean SDK — bundles dwave-system, dwave-samplers, dwave-cloud-client,
+# the `dwave` CLI, and everything else these experiments use.
+# Install into a virtualenv (see README):
+#   python -m venv ocean && source ocean/bin/activate && pip install -r requirements.txt
+dwave-ocean-sdk==9.4.0
+
+# Dev tooling — lint + type check (config in pyproject.toml):
+#   ruff check .   &&   mypy
+ruff==0.16.4
+mypy==2.3.1
