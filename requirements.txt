@@ -2,9 +2,9 @@
 # the `dwave` CLI, and everything else these experiments use.
 # Install into a virtualenv (see README):
 #   python -m venv ocean && source ocean/bin/activate && pip install -r requirements.txt
-dwave-ocean-sdk==9.4.0
+dwave-ocean-sdk==9.5.0
 
 # Dev tooling — lint + type check (config in pyproject.toml):
 #   ruff check .   &&   mypy
-ruff==0.16.4
-mypy==2.3.1
+ruff==0.17.4
+mypy==2.4.1
